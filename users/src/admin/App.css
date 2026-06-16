@@ -1,0 +1,347 @@
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold");
+
+:root {
+  --admin-primary-color: #1a4ace;
+  --admin-secondary-color: #010f2e;
+  --admin-accent-color: #c48807;
+  --admin-background-color: #bbccfa4b;
+  --admin-header-menu-height: 0px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.admin-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--admin-background-color);
+}
+
+.admin-app-sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.admin-logo-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.admin-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+}
+
+.admin-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.admin-title {
+  font-size: 10px;
+  font-weight: bolder;
+  color: var(--admin-primary-color);
+  text-align: center;
+}
+
+.admin-logo-container .admin-title h3 {
+  margin: 0 0 3px 0;
+}
+
+.admin-logo-container .admin-title p {
+  color: var(--admin-accent-color);
+}
+
+.admin-nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.admin-nav-link {
+  margin: 0 10px;
+  display: flex;
+  padding: 12px ;
+  border-radius: 10px;
+  color: rgb(68, 62, 62);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.admin-logout {
+  background-color: rgba(255, 0, 0, 0.062);
+  border-radius: 10px;
+  color: rgb(184, 45, 45);
+}
+
+.admin-logout:hover {
+  background-color: rgba(255, 0, 0, 0.1) !important;
+  color: rgb(184, 45, 45) !important;
+}
+
+.admin-nav-link .admin-nav-link-p{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.admin-nav-link-icon {
+  margin-right: 15px;
+}
+
+.admin-nav-link-extra {
+  background-color: var(--admin-background-color);
+  color: var(--admin-primary-color);
+  padding: 2px 6px;
+  border-radius: 5px;
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.admin-nav-link:hover {
+  background-color: var(--admin-background-color);
+  color: var(--admin-primary-color);
+}
+
+.admin-nav-link.active {
+  background-color: var(--admin-primary-color);
+  color: white;
+  box-shadow: 0 4px 12px rgba(4, 22, 73, 0.2);
+}
+
+.admin-app-m {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.admin-app-main {
+  flex: 1;
+  padding: 20px;
+}
+
+.admin-app-main .admin-app-header {
+  margin-bottom: 20px;
+}
+
+.admin-app-main .admin-app-header h2 {
+  color: var(--primary-color);
+}
+
+.admin-card {
+  border-radius: 10px;
+  padding: 0 20px 20px 0;
+}
+
+.admin-card h2 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.admin-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.admin-nav-menu-item h4 {
+  margin: 2px 0;
+  font-size: 10px;
+  padding-left: 10px;
+  color: grey;
+}
+
+.admin-app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.admin-app-header h2 {
+  color: var(--admin-primary-color);
+  font-size: 18px;
+}
+
+.admin-header-details-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 370px;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-image-container {
+  position: relative;
+}
+
+.admin-active {
+  position: absolute;
+  bottom: 2px;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #4caf50;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.profile-container img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.admin-search-container{
+  position: relative;
+}
+
+.admin-search-container input {
+  padding: 8px 30px 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #e9f7f6;
+  font-size: 12px;
+  width: 230px;
+  color: #333;
+  outline: none;
+  background-color: #f6f9fa;
+}
+
+.admin-search-container .search-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.admin-notification-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f6f9fa;
+  color: #888;
+}
+
+.admin-notification-count {
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  background-color: var(--admin-accent-color);
+  color: white;
+  border-radius: 50%;
+  height: 14px;
+  width: 14px;
+  font-size: 8px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-name {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 10px;
+  color: #333;
+}
+
+.profile-role {
+  font-size: 8px;
+  color: var(--admin-accent-color);
+}
+
+.card-holder {
+  display: flex;
+  justify-content: space-between;
+}
+
+.admin-small-card {
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  gap: 20px;
+  width: 230px;
+}
+
+.admin-small-card .card-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-small-card .card-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+}
+
+.admin-small-card .first-card-icon {
+  background-color: var(--admin-primary-color);
+}
+
+.admin-small-card .second-card-icon {
+  background-color: rgb(96, 194, 96);
+}
+
+.admin-small-card .third-card-icon {
+  background-color: rgb(175, 85, 228);
+}
+
+.admin-small-card .fourth-card-icon {
+  background-color: rgb(211, 127, 48);
+}
+
+.admin-small-card .card-icon {
+  font-size: 24px;
+}
+
+.admin-small-card .card-details h2 {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.admin-small-card .card-details p {
+  font-size: 18px;
+  color: #1a1919;
+  font-weight: 700;
+}
+
+.charts-holder {
+  display: flex;
+  gap: 20px;
+}
+
