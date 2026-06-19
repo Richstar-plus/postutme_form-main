@@ -1,8 +1,13 @@
+import "./Applications.css";
+
 export function Applications() {
   return (
-    <div>
-      <h2>Applications</h2>
-      <p>This is the applications page.</p>
+    <div className="application-container">
+      <div className="application-nav-indicator">
+      <p>Dashboard</p>
+      <p>{">"}</p>
+        <p>Applications</p>
+      </div>
     </div>
   );
 }

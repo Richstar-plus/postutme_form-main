@@ -1,10 +1,36 @@
+import { useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faBell } from "@fortawesome/free-solid-svg-icons";
 
+const adminRouteTitles = {
+  "/admin": "Dashboard",
+  "/admin/applications": "Applications",
+  "/admin/payments": "Payments",
+  "/admin/users": "Users",
+  "/admin/services": "Services",
+  "/admin/schools": "Schools",
+  "/admin/transactions": "Transactions",
+  "/admin/notifications": "Notifications",
+  "/admin/reports": "Reports",
+  "/admin/settings": "Settings",
+};
+
+function formatRouteTitle(pathname) {
+  return pathname
+    .split("/")
+    .filter(Boolean)
+    .pop()
+    ?.replace(/-/g, " ")
+    .replace(/\b\w/g, (char) => char.toUpperCase()) ?? "Dashboard";
+}
+
 export function Header() {
+  const location = useLocation();
+  const title = adminRouteTitles[location.pathname] || formatRouteTitle(location.pathname);
+
   return (
     <div className="admin-app-header">
-      <h2>Dashboard</h2>
+      <h2>{title}</h2>
       <div className="admin-header-details-container">
         <div className="admin-search-container">
           <input

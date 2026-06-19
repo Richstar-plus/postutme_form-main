@@ -1,0 +1,8 @@
+.application-nav-indicator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 170px;
+    font-size: 13px;
+    color: var(--primary-color);
+}
