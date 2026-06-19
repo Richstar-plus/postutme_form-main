@@ -1,15 +1,15 @@
-import { AdminCard } from "../components/AdminCard";
+import { AdminCard } from "../components/dashboard-components/AdminCard";
 import {
   faUsers,
   faNairaSign,
   faBookBookmark,
   faCircleCheck,
 } from "@fortawesome/free-solid-svg-icons";
-import ApplicationsChart from "../components/ApplicationsChart";
-import { ApplicationCard } from "../components/ApplicationsCard";
-import PaymentSummaryCard from "../components/PaymentSummaryCard";
-import ServiceBreakDownCard from "../components/ServiceBreakDownCard";
-import QuickActionCard from "../components/QuickActionCard";
+import ApplicationsChart from "../components/dashboard-components/ApplicationsChart";
+import { ApplicationCard } from "../components/dashboard-components/ApplicationsCard";
+import PaymentSummaryCard from "../components/dashboard-components/PaymentSummaryCard";
+import ServiceBreakDownCard from "../components/dashboard-components/ServiceBreakDownCard";
+import QuickActionCard from "../components/dashboard-components/QuickActionCard";
 export function AdminHome() {
   return (
     <>
