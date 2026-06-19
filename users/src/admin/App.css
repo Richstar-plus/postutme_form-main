@@ -345,3 +345,8 @@
   gap: 10px;
 }
 
+.bottom-cards {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}

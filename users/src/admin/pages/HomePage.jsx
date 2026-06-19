@@ -8,6 +8,8 @@ import {
 import ApplicationsChart from "../components/ApplicationsChart";
 import { ApplicationCard } from "../components/ApplicationsCard";
 import PaymentSummaryCard from "../components/PaymentSummaryCard";
+import ServiceBreakDownCard from "../components/ServiceBreakDownCard";
+import QuickActionCard from "../components/QuickActionCard";
 export function AdminHome() {
   return (
     <>
@@ -47,6 +49,12 @@ export function AdminHome() {
           <ApplicationsChart />
           <ApplicationCard />
           <PaymentSummaryCard />
+        </div>
+      </section>
+      <section className="admin-card">
+        <div className="bottom-cards">
+          <ServiceBreakDownCard />
+          <QuickActionCard />
         </div>
       </section>
     </>

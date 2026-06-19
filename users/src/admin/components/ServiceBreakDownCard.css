@@ -1,0 +1,52 @@
+.service-breakdown-card {
+  flex: 2;
+  background: #fff;
+  border-radius: 18px;
+  padding: 16px 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.service-breakdown-card h3 {
+  font-size: 11px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 14px;
+}
+
+.service-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.service-item {
+  text-align: center;
+  flex: 1;
+}
+
+.service-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-icon svg {
+  font-size: 13px;
+}
+
+.service-item h4 {
+  font-size: 13px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.service-item p {
+  font-size: 11px;
+  line-height: 1.3;
+  color: #374151;
+}
