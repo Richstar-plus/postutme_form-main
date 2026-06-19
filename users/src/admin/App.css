@@ -22,7 +22,8 @@
 }
 
 .admin-app-sidebar {
-  width: 250px;
+  width: 220px;
+  min-width: 220px;
   height: 100vh;
   background-color: white;
   display: flex;
@@ -143,7 +144,7 @@
 
 .admin-card {
   border-radius: 10px;
-  padding: 0 20px 20px 0;
+  padding: 0 0 20px 0;
 }
 
 .admin-card h2 {
@@ -341,6 +342,6 @@
 
 .charts-holder {
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 
