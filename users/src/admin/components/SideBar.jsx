@@ -34,6 +34,7 @@ export function SideBar() {
             className="admin-nav-link"
             icon={faGaugeHigh}
             label="Dashboard"
+            end
           />
         </div>
 

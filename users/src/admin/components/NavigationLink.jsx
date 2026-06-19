@@ -1,14 +1,17 @@
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-export function NavigationLink({ to, icon, label, extra, logout }) {
+export function NavigationLink({ to, icon, label, extra, logout, className = "", end = false }) {
   return (
     <div
       className="admin-nav-menu-item"
-      style={{ backgroundColor: logout ? "white" : "transparent"}}
+      style={{ backgroundColor: logout ? "white" : "transparent" }}
     >
       <NavLink
         to={to}
-        className={`admin-nav-link ${logout ? "admin-logout" : ""}`}
+        end={end}
+        className={({ isActive }) =>
+          `admin-nav-link ${logout ? "admin-logout" : ""} ${isActive ? "active" : ""} ${className}`.trim()
+        }
       >
         <div className="admin-nav-link-p">
           <p>

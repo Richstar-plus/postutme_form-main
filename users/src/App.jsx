@@ -19,6 +19,7 @@ import LocalGovernmentIdentificationLetter from "./pages/LocalGovernmentIdentifi
 // Admin routes
 import { AdminRoot } from "./admin/pages/Root";
 import { AdminHome } from "./admin/pages/HomePage";
+import { Applications } from "./admin/pages/Applications";
 import AdminErrorPage from "./admin/pages/ErrorPage";
 
 const router = createBrowserRouter([
@@ -96,6 +97,10 @@ const router = createBrowserRouter([
         index: true,
         element: <AdminHome />,
       },
+      {
+        path: "applications",
+        element: <Applications />,
+      }
     ],
   },
 ]);
