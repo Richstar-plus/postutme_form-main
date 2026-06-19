@@ -7,6 +7,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import ApplicationsChart from "../components/ApplicationsChart";
 import { ApplicationCard } from "../components/ApplicationsCard";
+import PaymentSummaryCard from "../components/PaymentSummaryCard";
 export function AdminHome() {
   return (
     <>
@@ -45,6 +46,7 @@ export function AdminHome() {
         <div className="charts-holder">
           <ApplicationsChart />
           <ApplicationCard />
+          <PaymentSummaryCard />
         </div>
       </section>
     </>
