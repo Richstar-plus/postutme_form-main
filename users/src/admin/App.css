@@ -17,14 +17,14 @@
 
 .admin-container {
   display: flex;
-  min-height: 100vh;
+  min-height: 130vh;
   background-color: var(--admin-background-color);
 }
 
 .admin-app-sidebar {
   width: 220px;
   min-width: 220px;
-  height: 100vh;
+  height: 100%;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -131,7 +131,7 @@
 
 .admin-app-main {
   flex: 1;
-  padding: 20px;
+  padding: 20px 10px 20px 20px ;
 }
 
 .admin-app-main .admin-app-header {
