@@ -22,7 +22,6 @@
 .application-content-card-holder {
   display: flex;
   justify-content: space-between;
-  gap: 14px;
   width: 100%;
 }
 
