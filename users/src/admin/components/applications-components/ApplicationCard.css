@@ -1,0 +1,73 @@
+.main-application-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 20px;
+  min-height: 135px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  width: 250px;
+    height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.application-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.application-card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 18px;
+}
+
+.application-card-graph {
+  width: 90px;
+  height: 35px;
+}
+
+.application-card-title {
+  font-size: 14px;
+  color: #7b809a;
+  margin: 0;
+  font-weight: 500;
+}
+
+.application-card-value {
+  font-size: 32px;
+  margin: 6px 0;
+  font-weight: 700;
+  color: #212529;
+}
+
+.application-card-footer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.application-card-percentage {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.application-card-percentage.up {
+  color: #22c55e;
+}
+
+.application-card-percentage.down {
+  color: #ef4444;
+}
+
+.application-card-month {
+  color: #94a3b8;
+  font-size: 13px;
+}

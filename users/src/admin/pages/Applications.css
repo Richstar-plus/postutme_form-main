@@ -2,7 +2,38 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 170px;
+    width: 150px;
     font-size: 13px;
     color: var(--primary-color);
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.application-container {
+  width: 100%;
+}
+
+.application-nav-indicator p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.application-content-card-holder {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .application-content-card-holder {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .application-content-card-holder {
+    grid-template-columns: 1fr;
+  }
 }
