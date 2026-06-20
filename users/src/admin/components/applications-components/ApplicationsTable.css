@@ -1,0 +1,255 @@
+/* =========================
+   Main Container
+========================= */
+
+.applications-wrapper {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px;
+  box-sizing: border-box;
+  border: 1px solid #edf0f7;
+  margin-top: 20px;
+}
+
+
+/* =========================
+   Table Container
+========================= */
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #eef2f7;
+  border-radius: 14px;
+}
+
+/* =========================
+   Table
+========================= */
+
+.applications-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+}
+
+.applications-table thead {
+  background: #f9fafb;
+}
+
+.applications-table th {
+  text-align: left;
+  padding: 16px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #6b7280;
+  border-bottom: 1px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+.applications-table td {
+  padding: 16px;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: middle;
+}
+
+.applications-table tbody tr {
+  transition: all 0.25s ease;
+}
+
+.applications-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+/* =========================
+   Checkbox
+========================= */
+
+.applications-table input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* =========================
+   Applicant Cell
+========================= */
+
+.applicant-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.applicant-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.applicant-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.applicant-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.applicant-email {
+  font-size: 10px;
+  color: #6b7280;
+}
+
+/* =========================
+   Service Badge
+========================= */
+
+.service-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #eef2ff;
+  color: #4338ca;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+/* =========================
+   School
+========================= */
+
+.school-text {
+  font-size: 10px;
+  color: #374151;
+  font-weight: 500;
+}
+
+/* =========================
+   Reference
+========================= */
+
+.reference-number {
+  font-size: 10px;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* =========================
+   Amount
+========================= */
+
+.amount-text {
+  font-size: 10px;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* =========================
+   Status Badge
+========================= */
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 95px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.status-pending {
+  background: #fff7ed;
+  color: #ea580c;
+}
+
+.status-approved {
+  background: #ecfdf5;
+  color: #059669;
+}
+
+.status-rejected {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+.status-processing {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+/* =========================
+   Date
+========================= */
+
+.submitted-date {
+  font-size: 10px;
+  color: #6b7280;
+  white-space: nowrap;
+}
+
+/* =========================
+   Actions
+========================= */
+
+.action-button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #6b7280;
+  font-size: 12px;
+  transition: 0.2s;
+}
+
+.action-button:hover {
+  color: #111827;
+}
+
+/* =========================
+   Empty State
+========================= */
+
+.empty-table {
+  text-align: center;
+  padding: 40px;
+  color: #6b7280;
+  font-size: 10px;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 1200px) {
+  .applications-wrapper {
+    padding: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .applications-header h2 {
+    font-size: 15px;
+  }
+
+  .applications-header p {
+    font-size: 10px;
+  }
+
+  .applications-table th,
+  .applications-table td {
+    padding: 12px;
+  }
+
+  .applicant-avatar {
+    width: 36px;
+    height: 36px;
+  }
+}

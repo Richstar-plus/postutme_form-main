@@ -8,6 +8,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import { ApplicationCard } from "../components/applications-components/ApplicationCard";
+import ApplicationsTable from "../components/applications-components/ApplicationsTable"
 
 export function Applications() {
   return (
@@ -55,6 +56,11 @@ export function Applications() {
           graphColor="#F59E0B"
         />
       </div>
+
+      <div className="application-table-holder">
+        <ApplicationsTable />
+      </div>
+
     </div>
   );
 }
