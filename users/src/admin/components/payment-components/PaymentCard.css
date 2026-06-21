@@ -1,0 +1,79 @@
+.main-payment-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 10px;
+  box-shadow: 0 1px 6px rgba(15, 23, 42, 0.05);
+  border: 1px solid #f1f5f9;
+
+  display: flex;
+  align-items: center;
+  min-height: 100px;
+  transition: 0.3s;
+}
+
+.payment-card:hover {
+  transform: translateY(-2px);
+}
+
+.payment-card-header {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.payment-card-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+  font-size: 14px;
+}
+
+.payment-card-title {
+  margin: 0;
+  color: #64748b;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.payment-card-amount {
+  margin: 8px 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.payment-card-footer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.payment-card-percentage {
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.payment-card-percentage.up {
+  color: #22c55e;
+}
+
+.payment-card-percentage.down {
+  color: #ef4444;
+}
+
+.payment-card-month {
+  font-size: 10px;
+  color: #94a3b8;
+}
+
+.payment-card-graph {
+  width: 65px;
+  height: 30px;
+  margin: 0 0 0 20px;
+}

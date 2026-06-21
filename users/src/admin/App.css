@@ -17,8 +17,8 @@
 
 .admin-container {
   display: flex;
-  min-height: 130vh;
   background-color: var(--admin-background-color);
+  height: 170vh;
 }
 
 .admin-app-sidebar {

@@ -20,6 +20,7 @@ import LocalGovernmentIdentificationLetter from "./pages/LocalGovernmentIdentifi
 import { AdminRoot } from "./admin/pages/Root";
 import { AdminHome } from "./admin/pages/HomePage";
 import { Applications } from "./admin/pages/Applications";
+import { Payment } from "./admin/pages/Payment";
 import AdminErrorPage from "./admin/pages/ErrorPage";
 
 const router = createBrowserRouter([
@@ -100,6 +101,10 @@ const router = createBrowserRouter([
       {
         path: "applications",
         element: <Applications />,
+      },
+      {
+        path: "payments",
+        element: <Payment />,
       }
     ],
   },
