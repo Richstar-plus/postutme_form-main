@@ -33,14 +33,14 @@
 
 .transactions-search svg {
   color: #94a3b8;
-  font-size: 14px;
+  font-size: 11px;
 }
 
 .transactions-search input {
   border: none;
   outline: none;
   width: 100%;
-  font-size: 13px;
+  font-size: 11px;
   color: #0f172a;
 }
 
@@ -54,7 +54,7 @@
   border-radius: 10px;
   padding: 0 14px;
   background: #fff;
-  font-size: 13px;
+  font-size: 11px;
   color: #334155;
   min-width: 140px;
   cursor: pointer;
@@ -67,14 +67,14 @@
   border-radius: 10px;
   display: flex;
   align-items: center;
-  font-size: 13px;
+  font-size: 11px;
   color: #334155;
   background: #fff;
 }
 
 .export-btn {
   height: 42px;
-  padding: 0 18px;
+  padding: 0 14px;
   border: 1px solid #8b5cf6;
   border-radius: 10px;
   background: #fff;
@@ -82,7 +82,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 600;
   cursor: pointer;
   transition: 0.2s;
@@ -108,16 +108,16 @@
 .transactions-table th {
   text-align: left;
   padding: 14px 16px;
-  font-size: 12px;
+  font-size: 11px;
   color: #64748b;
   font-weight: 600;
   border-bottom: 1px solid #eef2f7;
 }
 
 .transactions-table td {
-  padding: 16px;
+  padding: 13px;
   border-bottom: 1px solid #f1f5f9;
-  font-size: 13px;
+  font-size: 11px;
   color: #334155;
 }
 
@@ -136,8 +136,8 @@
 }
 
 .avatar {
-  width: 34px;
-  height: 34px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   font-size: 11px;
   font-weight: 700;
@@ -150,7 +150,7 @@
 
 .applicant-info h5 {
   margin: 0;
-  font-size: 13px;
+  font-size: 11px;
   color: #0f172a;
   font-weight: 600;
 }
@@ -166,7 +166,7 @@
 
 .trx-id {
   color: #475569;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
 }
 
@@ -179,7 +179,7 @@
   align-items: center;
   gap: 8px;
   color: #334155;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .service-dot {
@@ -224,7 +224,7 @@
 }
 
 .date-time span {
-  font-size: 12px;
+  font-size: 11px;
   color: #0f172a;
   font-weight: 500;
 }
@@ -251,7 +251,7 @@
   gap: 8px;
 
   cursor: pointer;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
 }
 
@@ -271,7 +271,7 @@
 }
 
 .pagination > div:first-child {
-  font-size: 12px;
+  font-size: 11px;
   color: #64748b;
 }
 
@@ -290,7 +290,7 @@
 
   cursor: pointer;
   color: #64748b;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .transaction-pagination-controls button.active {

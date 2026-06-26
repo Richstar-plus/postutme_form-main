@@ -1,7 +1,7 @@
 import "./Payment.css";
 
 import { PaymentCard } from "../components/payment-components/PaymentCard";
-import {Payments} from "../components/payment-components/Payment"
+import {Payments} from "../components/payment-components/Payment";
 
 import {
   faWallet,

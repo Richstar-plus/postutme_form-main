@@ -1,7 +1,7 @@
 .payment-dashboard-layout {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 24px;
+  gap: 10px;
   margin-top: 24px;
 }
 

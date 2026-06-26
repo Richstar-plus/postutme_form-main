@@ -1,6 +1,7 @@
 import Transactions from "./Transactions";
 import PaymentSummary from "./PaymentSummary";
 import RecentPaymentActivities from "./RecentPaymentActivities";
+import "./payment.css"
 
 export function Payments() {
   return (

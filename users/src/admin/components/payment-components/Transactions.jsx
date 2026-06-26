@@ -229,7 +229,6 @@ export default function Transactions() {
             <th>Applicant</th>
             <th>Service</th>
             <th>Amount</th>
-            <th>Payment Method</th>
             <th>Status</th>
             <th>Date & Time</th>
             <th>Action</th>
@@ -291,8 +290,6 @@ export default function Transactions() {
               <td>
                 ₦{item.amount.toLocaleString()}
               </td>
-
-              <td>{item.provider}</td>
 
               <td>
                 <span
