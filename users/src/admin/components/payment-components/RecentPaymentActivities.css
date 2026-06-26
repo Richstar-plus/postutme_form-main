@@ -1,0 +1,185 @@
+.recent-activities-card {
+  background: #ffffff;
+  border: 1px solid #eef2f7;
+  border-radius: 16px;
+  padding: 20px;
+  height: fit-content;
+}
+
+/* ======================
+   Header
+====================== */
+
+.recent-activities-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.recent-activities-header h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.view-all-btn {
+  border: none;
+  background: transparent;
+  color: #6366f1;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.view-all-btn:hover {
+  color: #4f46e5;
+}
+
+/* ======================
+   Activities List
+====================== */
+
+.activities-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* ======================
+   Activity Item
+====================== */
+
+.activity-item {
+  display: flex;
+  gap: 14px;
+  position: relative;
+}
+
+.activity-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 16px;
+  top: 42px;
+  width: 2px;
+  height: calc(100% + 8px);
+  background: #eef2f7;
+}
+
+/* ======================
+   Status Icon
+====================== */
+
+.activity-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.activity-icon svg {
+  font-size: 14px;
+}
+
+.activity-icon.success {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.activity-icon.pending {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.activity-icon.failed {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+/* ======================
+   Content
+====================== */
+
+.activity-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.activity-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.activity-top h4 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.activity-amount {
+  font-size: 13px;
+  font-weight: 700;
+  color: #111827;
+  white-space: nowrap;
+}
+
+.activity-content p {
+  margin: 6px 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #64748b;
+}
+
+.activity-content small {
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+/* ======================
+   Hover Effect
+====================== */
+
+.activity-item:hover .activity-top h4 {
+  color: #6366f1;
+}
+
+.activity-item:hover {
+  cursor: pointer;
+}
+
+/* ======================
+   Responsive
+====================== */
+
+@media (max-width: 768px) {
+  .recent-activities-card {
+    padding: 16px;
+  }
+
+  .recent-activities-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .activity-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .activity-amount {
+    font-size: 12px;
+  }
+}

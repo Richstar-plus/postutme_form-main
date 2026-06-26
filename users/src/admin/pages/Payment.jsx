@@ -1,6 +1,7 @@
 import "./Payment.css";
 
 import { PaymentCard } from "../components/payment-components/PaymentCard";
+import {Payments} from "../components/payment-components/Payment"
 
 import {
   faWallet,
@@ -59,6 +60,8 @@ export function Payment() {
           graphColor="#fb7185"
         />
       </div>
+      <Payments />
+      
     </div>
   );
 }

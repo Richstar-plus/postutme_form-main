@@ -41,9 +41,9 @@
 .applications-table th {
   text-align: left;
   padding: 16px;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 600;
-  color: #6b7280;
+  color: #4f545e;
   border-bottom: 1px solid #e5e7eb;
   white-space: nowrap;
 }
