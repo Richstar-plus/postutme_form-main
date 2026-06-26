@@ -1,4 +1,4 @@
-.chart-card {
+.applications-chart-card {
     background: white;
     border-radius: 24px;
     padding: 15px;
@@ -6,20 +6,20 @@
     width: 450px;
 }
 
-.chart-header {
+.applications-chart-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
 }
 
-.chart-header h3 {
+.applications-chart-header h3 {
     font-size: 15px;
     font-weight: 700;
     color: #111827;
 }
 
-.chart-header select {
+.applications-chart-select {
     border: 1px solid #E5E7EB;
     border-radius: 12px;
     background: white;
@@ -30,9 +30,12 @@
     font-size: 10px;
 }
 
-.chart-wrapper {
+.applications-chart-wrapper {
     width: 100%;
     height: 190px;
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
 }
 
 /* Axis labels */
@@ -51,32 +54,32 @@
 
 /* Tooltip */
 
-.chart-tooltip {
+.applications-chart-tooltip {
     background: white;
     padding: 16px 5px;
     border-radius: 16px;
     box-shadow: 0 8px 25px rgba(0,0,0,.12);
 }
 
-.tooltip-date {
+.applications-chart-tooltip-date {
     font-size: 10px;
     color: #6B7280;
     margin-bottom: 8px;
 }
 
-.tooltip-value {
+.applications-chart-tooltip-value {
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-.tooltip-number {
+.applications-chart-tooltip-number {
     font-size: 12px;
     font-weight: 700;
     color: #111827;
 }
 
-.tooltip-text {
+.applications-chart-tooltip-text {
     color: #6B7280;
     font-size: 10px;
 }

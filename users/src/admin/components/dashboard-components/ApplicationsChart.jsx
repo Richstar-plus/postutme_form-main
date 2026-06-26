@@ -25,15 +25,15 @@ const data = [
 function CustomTooltip({ active, payload, label }) {
   if (active && payload && payload.length) {
     return (
-      <div className="chart-tooltip">
-        <div className="tooltip-date">{label}</div>
+      <div className="applications-chart-tooltip">
+        <div className="applications-chart-tooltip-date">{label}</div>
 
-        <div className="tooltip-value">
-          <span className="tooltip-number">
+        <div className="applications-chart-tooltip-value">
+          <span className="applications-chart-tooltip-number">
             {payload[0].value}
           </span>
 
-          <span className="tooltip-text">
+          <span className="applications-chart-tooltip-text">
             Applications
           </span>
         </div>
@@ -46,17 +46,17 @@ function CustomTooltip({ active, payload, label }) {
 
 export default function ApplicationsChart() {
   return (
-    <div className="chart-card">
-      <div className="chart-header">
+    <div className="applications-chart-card">
+      <div className="applications-chart-header">
         <h3>Applications Overview</h3>
 
-        <select>
+        <select className="applications-chart-select">
           <option>This Month</option>
         </select>
       </div>
 
-      <div className="chart-wrapper">
-        <ResponsiveContainer width="100%" height="100%">
+      <div className="applications-chart-wrapper">
+        <ResponsiveContainer width="100%" height="100%" minWidth={0} minHeight={0}>
           <AreaChart data={data}>
             <defs>
               <linearGradient id="purpleGradient" x1="0" y1="0" x2="0" y2="1">

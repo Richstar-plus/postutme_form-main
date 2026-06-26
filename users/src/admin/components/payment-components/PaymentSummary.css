@@ -1,4 +1,4 @@
-.payment-summary-card {
+.payment-summary-widget-card {
   background: #ffffff;
   border: 1px solid #eef2f7;
   border-radius: 16px;
@@ -6,7 +6,7 @@
   height: fit-content;
 }
 
-.payment-summary-title {
+.payment-summary-widget-title {
   margin: 0 0 18px;
   font-size: 15px;
   font-weight: 700;
@@ -17,7 +17,7 @@
    Layout
 ====================== */
 
-.payment-summary-content {
+.payment-summary-widget-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,14 +27,14 @@
    Chart
 ====================== */
 
-.chart-wrapper {
+.payment-summary-widget-chart-wrapper {
   width: 220px;
   height: 220px;
   position: relative;
   margin-bottom: 18px;
 }
 
-.chart-center {
+.payment-summary-widget-chart-center {
   position: absolute;
   inset: 0;
 
@@ -46,7 +46,7 @@
   pointer-events: none;
 }
 
-.chart-center h2 {
+.payment-summary-widget-chart-center h2 {
   margin: 0;
   font-size: 28px;
   font-weight: 800;
@@ -54,7 +54,7 @@
   line-height: 1;
 }
 
-.chart-center p {
+.payment-summary-widget-chart-center p {
   margin-top: 6px;
   font-size: 13px;
   color: #64748b;
@@ -64,44 +64,44 @@
    Legend
 ====================== */
 
-.summary-legend {
+.payment-summary-widget-legend {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
 
-.legend-item {
+.payment-summary-widget-legend-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.legend-left {
+.payment-summary-widget-legend-left {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.legend-left span:last-child {
+.payment-summary-widget-legend-left span:last-child {
   font-size: 13px;
   color: #334155;
   font-weight: 500;
 }
 
-.legend-right {
+.payment-summary-widget-legend-right {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
-.legend-right strong {
+.payment-summary-widget-legend-right strong {
   font-size: 13px;
   color: #0f172a;
   font-weight: 700;
 }
 
-.legend-right small {
+.payment-summary-widget-legend-right small {
   color: #64748b;
   font-size: 12px;
 }
@@ -110,21 +110,21 @@
    Legend Dots
 ====================== */
 
-.dot {
+.payment-summary-widget-dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
 }
 
-.dot.successful {
+.payment-summary-widget-dot-successful {
   background: #4ade80;
 }
 
-.dot.pending {
+.payment-summary-widget-dot-pending {
   background: #f59e0b;
 }
 
-.dot.failed {
+.payment-summary-widget-dot-failed {
   background: #fb7185;
 }
 
@@ -132,7 +132,7 @@
    Button
 ====================== */
 
-.view-report-btn {
+.payment-summary-widget-report-btn {
   width: 100%;
   margin-top: 20px;
 
@@ -147,7 +147,7 @@
   transition: 0.2s;
 }
 
-.view-report-btn:hover {
+.payment-summary-widget-report-btn:hover {
   color: #4f46e5;
 }
 
@@ -156,23 +156,23 @@
 ====================== */
 
 @media (max-width: 1200px) {
-  .chart-wrapper {
+  .payment-summary-widget-chart-wrapper {
     width: 200px;
     height: 200px;
   }
 }
 
 @media (max-width: 768px) {
-  .payment-summary-card {
+  .payment-summary-widget-card {
     padding: 16px;
   }
 
-  .chart-wrapper {
+  .payment-summary-widget-chart-wrapper {
     width: 180px;
     height: 180px;
   }
 
-  .chart-center h2 {
+  .payment-summary-widget-chart-center h2 {
     font-size: 24px;
   }
 }

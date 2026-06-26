@@ -275,12 +275,12 @@
   color: #64748b;
 }
 
-.pagination-controls {
+.transaction-pagination-controls {
   display: flex;
   gap: 6px;
 }
 
-.pagination-controls button {
+.transaction-pagination-controls button {
   width: 34px;
   height: 34px;
 
@@ -293,7 +293,7 @@
   font-size: 12px;
 }
 
-.pagination-controls button.active {
+.transaction-pagination-controls button.active {
   background: #6d5efc;
   border-color: #6d5efc;
   color: #fff;

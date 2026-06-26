@@ -42,11 +42,11 @@ const data = [
 
 export default function PaymentSummaryCard() {
   return (
-    <div className="payment-card">
-      <h3 className="payment-title">Payment Summary</h3>
-      <div className="payment-content">
-        <div className="payment-chart-wrapper">
-          <ResponsiveContainer width={120} height={120}>
+    <div className="dashboard-payment-summary-card">
+      <h3 className="dashboard-payment-summary-title">Payment Summary</h3>
+      <div className="dashboard-payment-summary-content">
+        <div className="dashboard-payment-summary-chart-wrapper">
+          <ResponsiveContainer width="100%" height="100%" minWidth={0} minHeight={0}>
             <PieChart>
               <Pie
                 data={data}
@@ -69,7 +69,7 @@ export default function PaymentSummaryCard() {
                 y="47%"
                 textAnchor="middle"
                 dominantBaseline="middle"
-                className="center-value"
+                className="dashboard-payment-summary-center-value"
               >
                 ₦4.56M
               </text>
@@ -79,7 +79,7 @@ export default function PaymentSummaryCard() {
                 y="61%"
                 textAnchor="middle"
                 dominantBaseline="middle"
-                className="center-label"
+                className="dashboard-payment-summary-center-label"
               >
                 Total Revenue
               </text>
@@ -87,17 +87,17 @@ export default function PaymentSummaryCard() {
           </ResponsiveContainer>
         </div>
 
-        <div className="legend">
+        <div className="dashboard-payment-summary-legend">
           {data.map((item, index) => (
-            <div className="legend-item" key={index}>
+            <div className="dashboard-payment-summary-legend-item" key={index}>
               <span
-                className="legend-dot"
+                className="dashboard-payment-summary-legend-dot"
                 style={{ backgroundColor: item.color }}
               ></span>
 
               <div>
-                <div className="legend-title">{item.name}</div>
-                <div className="legend-value">
+                <div className="dashboard-payment-summary-legend-title">{item.name}</div>
+                <div className="dashboard-payment-summary-legend-value">
                   {item.amount} ({item.value}%)
                 </div>
               </div>
@@ -106,7 +106,7 @@ export default function PaymentSummaryCard() {
         </div>
       </div>
 
-      <button className="report-btn">
+      <button className="dashboard-payment-summary-report-btn">
         View full report <span>→</span>
       </button>
     </div>

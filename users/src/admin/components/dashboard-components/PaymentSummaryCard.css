@@ -1,4 +1,4 @@
-.payment-card {
+.dashboard-payment-summary-card {
   flex: 1;
   background: #fff;
   border-radius: 20px;
@@ -7,38 +7,40 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
-.payment-title {
+.dashboard-payment-summary-title {
   font-size: 13px;
   font-weight: 700;
   color: #111827;
   margin: 0 0 18px;
 }
 
-.payment-content {
+.dashboard-payment-summary-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.payment-chart-wrapper {
+.dashboard-payment-summary-chart-wrapper {
   width: 120px;
   height: 120px;
+  min-width: 0;
+  min-height: 0;
   position: relative;
 }
 
-.center-value {
+.dashboard-payment-summary-center-value {
   fill: #111827;
   font-size: 12px;
   font-weight: 800;
 }
 
-.center-label {
+.dashboard-payment-summary-center-label {
   fill: #6b7280;
   font-size: 10px;
   font-weight: 500;
 }
 
-.legend {
+.dashboard-payment-summary-legend {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -46,13 +48,13 @@
   padding-left: 12px;
 }
 
-.legend-item {
+.dashboard-payment-summary-legend-item {
   display: flex;
   align-items: flex-start;
   gap: 10px;
 }
 
-.legend-dot {
+.dashboard-payment-summary-legend-dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -60,20 +62,20 @@
   flex-shrink: 0;
 }
 
-.legend-title {
+.dashboard-payment-summary-legend-title {
   font-size: 10px;
   color: #374151;
   font-weight: 500;
   line-height: 1.2;
 }
 
-.legend-value {
+.dashboard-payment-summary-legend-value {
   font-size: 10px;
   color: #6b7280;
   margin-top: 2px;
 }
 
-.report-btn {
+.dashboard-payment-summary-report-btn {
   width: 100%;
   margin-top: 20px;
   background: transparent;
@@ -85,10 +87,10 @@
   text-align: center;
 }
 
-.report-btn:hover {
+.dashboard-payment-summary-report-btn:hover {
   opacity: 0.85;
 }
 
-.report-btn span {
+.dashboard-payment-summary-report-btn span {
   margin-left: 4px;
 }
