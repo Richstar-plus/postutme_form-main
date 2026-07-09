@@ -22,6 +22,14 @@ import { AdminHome } from "./admin/pages/HomePage";
 import { Applications } from "./admin/pages/Applications";
 import { Payment } from "./admin/pages/Payment";
 import AdminErrorPage from "./admin/pages/ErrorPage";
+import { Users } from "./admin/pages/Users";
+import { Services } from "./admin/pages/Services";
+import { Schools } from "./admin/pages/Schools";
+import { Transactions } from "./admin/pages/Transactions";
+import { Notifications } from "./admin/pages/Notifications";
+import { Settings } from "./admin/pages/Settings";
+
+
 
 const router = createBrowserRouter([
   // User routes
@@ -105,6 +113,30 @@ const router = createBrowserRouter([
       {
         path: "payments",
         element: <Payment />,
+      },
+      {
+        path: "users",
+        element: <Users />,
+      },
+      {
+        path: "services",
+        element: <Services />,
+      },
+      {
+        path: "schools",
+        element: <Schools />,
+      },
+      {
+        path: "transactions",
+        element: <Transactions />,
+      },
+      {
+        path: "notifications",
+        element: <Notifications />,
+      },
+      {
+        path: "settings",
+        element: <Settings />,
       }
     ],
   },
