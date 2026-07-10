@@ -1,0 +1,73 @@
+.users-container {
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Breadcrumb (matches the other pages) */
+.application-nav-indicator {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.application-nav-indicator p {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 500;
+  color: #64748b;
+}
+
+.application-nav-indicator p:last-child {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+/* ==========================
+   Cards Container
+========================== */
+
+.users-card-holder {
+  display: flex;
+  gap: 18px;
+  width: 100%;
+}
+
+/* ==========================
+   Large Desktop
+========================== */
+
+@media (max-width: 1400px) {
+  .users-card-holder {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ==========================
+   Tablet
+========================== */
+
+@media (max-width: 900px) {
+  .users-card-holder {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================
+   Mobile
+========================== */
+
+@media (max-width: 600px) {
+  .users-card-holder {
+    gap: 14px;
+  }
+
+  .application-nav-indicator {
+    gap: 6px;
+  }
+
+  .application-nav-indicator p {
+    font-size: 12px;
+  }
+}

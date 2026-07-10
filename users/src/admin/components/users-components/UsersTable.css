@@ -1,0 +1,319 @@
+.users-table-container {
+  width: 100%;
+  background: #fff;
+  border-radius: 18px;
+  border: 1px solid #edf2f7;
+  overflow: hidden;
+}
+
+/* ===========================
+   TABLE
+=========================== */
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.users-table thead {
+  background: #fafbfc;
+}
+
+.users-table th {
+  text-align: left;
+  padding: 16px 18px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748b;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.users-table td {
+  padding: 16px 18px;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 13px;
+  color: #334155;
+}
+
+.users-table tbody tr {
+  transition: .2s;
+}
+
+.users-table tbody tr:hover {
+  background: #fafbff;
+}
+
+/* ===========================
+   CHECKBOX
+=========================== */
+
+.users-table input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* ===========================
+   USER CELL
+=========================== */
+
+.user-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.user-username {
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+/* ===========================
+   EMAIL
+=========================== */
+
+.user-email {
+  color: #475569;
+  font-size: 12px;
+}
+
+/* ===========================
+   PHONE
+=========================== */
+
+.user-phone {
+  color: #334155;
+  font-weight: 500;
+}
+
+/* ===========================
+   REGISTERED DATE
+=========================== */
+
+.user-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-date span {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.user-date small {
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+/* ===========================
+   STATUS BADGES
+=========================== */
+
+.status-badge {
+  padding: 5px 14px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.status-active {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.status-inactive {
+  background: #fff7ed;
+  color: #ea580c;
+}
+
+.status-suspended {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+/* ===========================
+   ACTION BUTTON
+=========================== */
+
+.action-container {
+  position: relative;
+}
+
+.action-btn {
+  height: 34px;
+  padding: 0 14px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  cursor: pointer;
+
+  color: #5b4df7;
+  font-size: 12px;
+  font-weight: 600;
+
+  transition: .2s;
+}
+
+.action-btn:hover {
+  background: #f8fafc;
+}
+
+/* ===========================
+   DROPDOWN
+=========================== */
+
+.action-dropdown {
+  position: absolute;
+  right: 0;
+  top: 42px;
+
+  width: 170px;
+
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #edf2f7;
+
+  box-shadow: 0 15px 35px rgba(0,0,0,.08);
+
+  overflow: hidden;
+
+  z-index: 200;
+}
+
+.action-dropdown button {
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding: 13px 16px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  cursor: pointer;
+
+  color: #334155;
+
+  transition: .2s;
+}
+
+.action-dropdown button:hover {
+  background: #f8fafc;
+}
+
+.action-dropdown .delete-btn {
+  color: #dc2626;
+}
+
+.action-dropdown .delete-btn:hover {
+  background: #fef2f2;
+}
+
+/* ===========================
+   PAGINATION
+=========================== */
+
+.users-pagination {
+  padding: 18px 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-top: 1px solid #edf2f7;
+}
+
+.users-pagination > div:first-child {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.pagination-buttons {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pagination-buttons button {
+  min-width: 36px;
+  height: 36px;
+
+  border: 1px solid #e5e7eb;
+  background: #fff;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-size: 12px;
+  color: #475569;
+
+  transition: .2s;
+}
+
+.pagination-buttons button:hover:not(:disabled) {
+  background: #f8fafc;
+}
+
+.pagination-buttons button.active {
+  background: #6D5EF9;
+  color: #fff;
+  border-color: #6D5EF9;
+}
+
+.pagination-buttons button:disabled {
+  opacity: .45;
+  cursor: not-allowed;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width:1200px){
+
+.users-table-container{
+overflow-x:auto;
+}
+
+.users-table{
+min-width:1150px;
+}
+
+}
+
+@media (max-width:768px){
+
+.users-pagination{
+flex-direction:column;
+gap:15px;
+}
+
+}

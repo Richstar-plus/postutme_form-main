@@ -1,0 +1,246 @@
+/* ==========================
+   User Cell
+========================== */
+
+.user-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #f1f5f9;
+  flex-shrink: 0;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.user-username {
+  margin-top: 2px;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* ==========================
+   Email
+========================== */
+
+.user-email {
+  font-size: 13px;
+  color: #334155;
+}
+
+/* ==========================
+   Phone
+========================== */
+
+.user-phone {
+  color: #475569;
+  font-size: 13px;
+}
+
+/* ==========================
+   Date
+========================== */
+
+.user-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-date span {
+  font-size: 13px;
+  color: #0f172a;
+  font-weight: 500;
+}
+
+.user-date small {
+  margin-top: 3px;
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+/* ==========================
+   Status
+========================== */
+
+.status-badge {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 95px;
+  padding: 6px 14px;
+
+  border-radius: 999px;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-active {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.status-inactive {
+  background: #fef3c7;
+  color: #ca8a04;
+}
+
+.status-suspended {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+/* ==========================
+   Actions
+========================== */
+
+.action-container {
+  position: relative;
+}
+
+.action-btn {
+  height: 36px;
+  padding: 0 14px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #5b4df7;
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.action-btn:hover {
+  background: #f8fafc;
+}
+
+/* ==========================
+   Dropdown
+========================== */
+
+.action-dropdown {
+  position: absolute;
+
+  right: 0;
+  top: 42px;
+
+  width: 190px;
+
+  background: #ffffff;
+
+  border: 1px solid #edf2f7;
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  box-shadow: 0 15px 40px rgba(15, 23, 42, 0.12);
+
+  z-index: 999;
+}
+
+.action-dropdown button {
+  width: 100%;
+  border: none;
+  background: transparent;
+
+  padding: 13px 16px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: #334155;
+  font-size: 13px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.action-dropdown button:hover {
+  background: #f8fafc;
+}
+
+.action-dropdown svg {
+  width: 14px;
+}
+
+.delete-btn {
+  color: #dc2626 !important;
+}
+
+.delete-btn:hover {
+  background: #fef2f2 !important;
+}
+
+/* ==========================
+   Row Hover
+========================== */
+
+.users-table tbody tr:hover .user-name {
+  color: #5b4df7;
+}
+
+/* ==========================
+   Checkbox
+========================== */
+
+.users-table input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width: 768px) {
+  .user-avatar {
+    width: 36px;
+    height: 36px;
+  }
+
+  .user-name {
+    font-size: 13px;
+  }
+
+  .user-username {
+    font-size: 11px;
+  }
+
+  .status-badge {
+    min-width: 80px;
+    font-size: 11px;
+  }
+
+  .action-dropdown {
+    width: 170px;
+  }
+}

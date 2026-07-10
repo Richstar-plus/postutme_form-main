@@ -1,0 +1,196 @@
+.users-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px;
+  border-bottom: 1px solid #edf2f7;
+  background: #ffffff;
+  flex-wrap: wrap;
+}
+
+/* ===========================
+   Search
+=========================== */
+
+.users-search {
+  flex: 1;
+  min-width: 320px;
+  height: 44px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 14px;
+  gap: 10px;
+
+  background: #fff;
+
+  transition: .2s;
+}
+
+.users-search:focus-within {
+  border-color: #6D5EF9;
+  box-shadow: 0 0 0 3px rgba(109,94,249,.08);
+}
+
+.search-icon {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.users-search input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+
+  font-size: 13px;
+  color: #334155;
+}
+
+.users-search input::placeholder {
+  color: #94a3b8;
+}
+
+/* ===========================
+   Selects
+=========================== */
+
+.users-toolbar select {
+  min-width: 160px;
+  height: 44px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+
+  padding: 0 14px;
+
+  background: #fff;
+
+  color: #334155;
+  font-size: 13px;
+
+  outline: none;
+  cursor: pointer;
+
+  transition: .2s;
+}
+
+.users-toolbar select:hover {
+  border-color: #d1d5db;
+}
+
+.users-toolbar select:focus {
+  border-color: #6D5EF9;
+  box-shadow: 0 0 0 3px rgba(109,94,249,.08);
+}
+
+/* ===========================
+   Date Button
+=========================== */
+
+.date-btn {
+  height: 44px;
+  padding: 0 16px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+
+  background: #fff;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #475569;
+  font-size: 13px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: .2s;
+}
+
+.date-btn:hover {
+  background: #f8fafc;
+}
+
+/* ===========================
+   Export Button
+=========================== */
+
+.export-users-btn {
+  height: 44px;
+  padding: 0 20px;
+
+  border: 1px solid #6D5EF9;
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #6D5EF9;
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: .2s;
+}
+
+.export-users-btn:hover {
+  background: #f5f3ff;
+}
+
+.export-users-btn:active {
+  transform: scale(.98);
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width:1200px){
+
+.users-toolbar{
+flex-direction:column;
+align-items:stretch;
+}
+
+.users-search{
+min-width:100%;
+}
+
+.users-toolbar select,
+.date-btn,
+.export-users-btn{
+width:100%;
+}
+
+}
+
+@media (max-width:768px){
+
+.users-toolbar{
+padding:15px;
+gap:12px;
+}
+
+.users-search{
+height:42px;
+}
+
+.users-toolbar select,
+.date-btn,
+.export-users-btn{
+height:42px;
+font-size:12px;
+}
+
+}

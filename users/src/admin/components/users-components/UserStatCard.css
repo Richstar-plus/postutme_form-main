@@ -1,0 +1,164 @@
+.user-stat-card {
+  background: #ffffff;
+  border: 1px solid #edf2f7;
+  border-radius: 18px;
+  padding: 15px 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  transition: all 0.25s ease;
+}
+
+.user-stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+/* =======================
+   Left Section
+======================= */
+
+.user-stat-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  flex: 1;
+}
+
+.user-stat-icon {
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #ffffff;
+  font-size: 15px;
+
+  flex-shrink: 0;
+}
+
+.user-stat-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-stat-title {
+  margin: 0;
+  font-size: 10px;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.user-stat-value {
+  margin: 6px 0 8px;
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.user-stat-footer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.user-stat-percentage {
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.user-stat-up {
+  color: #22c55e;
+}
+
+.user-stat-down {
+  color: #ef4444;
+}
+
+.user-stat-month {
+  font-size: 10px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+/* =======================
+   Right Section
+======================= */
+
+.user-stat-right {
+  width: 95px;
+  height: 46px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 12px;
+
+  flex-shrink: 0;
+}
+
+.user-stat-graph {
+  width: 100%;
+  height: 100%;
+}
+
+/* =======================
+   Responsive
+======================= */
+
+@media (max-width: 1200px) {
+  .user-stat-card {
+    padding: 16px;
+  }
+
+  .user-stat-value {
+    font-size: 28px;
+  }
+
+  .user-stat-right {
+    width: 85px;
+  }
+}
+
+@media (max-width: 768px) {
+  .user-stat-card {
+    padding: 15px;
+  }
+
+  .user-stat-icon {
+    width: 38px;
+    height: 38px;
+    font-size: 14px;
+  }
+
+  .user-stat-title {
+    font-size: 11px;
+  }
+
+  .user-stat-value {
+    font-size: 24px;
+  }
+
+  .user-stat-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+
+  .user-stat-month {
+    font-size: 11px;
+  }
+
+  .user-stat-right {
+    width: 75px;
+    height: 40px;
+  }
+}
