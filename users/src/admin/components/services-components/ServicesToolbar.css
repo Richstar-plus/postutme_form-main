@@ -1,0 +1,230 @@
+.services-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+
+  padding: 20px;
+
+  border-bottom: 1px solid #edf2f7;
+
+  background: #ffffff;
+}
+
+/* ============================
+   LEFT
+============================ */
+
+.toolbar-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: 1;
+}
+
+/* ============================
+   SEARCH
+============================ */
+
+.service-search {
+  width: 360px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 0 14px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  transition: 0.2s;
+}
+
+.service-search:focus-within {
+  border-color: #6d5ef9;
+  box-shadow: 0 0 0 3px rgba(109, 94, 249, 0.08);
+}
+
+.search-icon {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.service-search input {
+  flex: 1;
+
+  border: none;
+  outline: none;
+  background: transparent;
+
+  color: #334155;
+  font-size: 13px;
+}
+
+.service-search input::placeholder {
+  color: #94a3b8;
+}
+
+/* ============================
+   SELECT
+============================ */
+
+.services-toolbar select {
+  height: 44px;
+  min-width: 170px;
+
+  padding: 0 16px;
+
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+
+  background: #ffffff;
+
+  color: #334155;
+  font-size: 13px;
+
+  outline: none;
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.services-toolbar select:hover {
+  border-color: #d1d5db;
+}
+
+.services-toolbar select:focus {
+  border-color: #6d5ef9;
+  box-shadow: 0 0 0 3px rgba(109, 94, 249, 0.08);
+}
+
+/* ============================
+   RIGHT
+============================ */
+
+.toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* ============================
+   EXPORT BUTTON
+============================ */
+
+.export-btn {
+  height: 44px;
+  padding: 0 18px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+
+  background: #ffffff;
+
+  color: #475569;
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.export-btn:hover {
+  background: #f8fafc;
+}
+
+/* ============================
+   ADD SERVICE
+============================ */
+
+.add-service-btn {
+  height: 44px;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #6d5ef9;
+
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.add-service-btn:hover {
+  background: #5b4df7;
+}
+
+.add-service-btn:active {
+  transform: scale(0.98);
+}
+
+/* ============================
+   RESPONSIVE
+============================ */
+
+@media (max-width: 1200px) {
+  .services-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .toolbar-left,
+  .toolbar-right {
+    width: 100%;
+  }
+
+  .toolbar-left {
+    flex-direction: column;
+  }
+
+  .toolbar-right {
+    justify-content: space-between;
+  }
+
+  .service-search {
+    width: 100%;
+  }
+
+  .services-toolbar select {
+    width: 100%;
+  }
+
+  .export-btn,
+  .add-service-btn {
+    flex: 1;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .toolbar-right {
+    flex-direction: column;
+  }
+
+  .export-btn,
+  .add-service-btn {
+    width: 100%;
+  }
+
+  .services-toolbar {
+    padding: 15px;
+  }
+}

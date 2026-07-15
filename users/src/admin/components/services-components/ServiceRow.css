@@ -1,0 +1,273 @@
+/* ==========================================
+   SERVICE CELL
+========================================== */
+
+.service-cell {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.service-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #ffffff;
+  font-size: 18px;
+
+  flex-shrink: 0;
+}
+
+.service-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.service-code {
+  margin-top: 3px;
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+/* ==========================================
+   CATEGORY
+========================================== */
+
+.category-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 6px 14px;
+
+  border-radius: 999px;
+
+  background: #f5f3ff;
+  color: #6d5ef9;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* ==========================================
+   PRICE
+========================================== */
+
+.service-price {
+  font-size: 14px;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* ==========================================
+   ORDERS
+========================================== */
+
+.service-orders {
+  font-size: 13px;
+  font-weight: 600;
+  color: #475569;
+}
+
+/* ==========================================
+   STATUS
+========================================== */
+
+.status-badge {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 90px;
+
+  padding: 6px 14px;
+
+  border-radius: 999px;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.status-active {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.status-inactive {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+/* ==========================================
+   CREATED DATE
+========================================== */
+
+.created-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.created-date span {
+  font-size: 13px;
+  font-weight: 500;
+  color: #0f172a;
+}
+
+.created-date small {
+  margin-top: 3px;
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+/* ==========================================
+   ACTION BUTTON
+========================================== */
+
+.action-wrapper {
+  position: relative;
+}
+
+.action-menu-btn {
+  width: 36px;
+  height: 36px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.action-menu-btn:hover {
+  background: #f8fafc;
+}
+
+.action-menu-btn svg {
+  color: #64748b;
+  font-size: 15px;
+}
+
+/* ==========================================
+   DROPDOWN
+========================================== */
+
+.action-dropdown {
+  position: absolute;
+
+  right: 0;
+  top: 42px;
+
+  width: 190px;
+
+  background: #ffffff;
+
+  border: 1px solid #edf2f7;
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  box-shadow: 0 15px 40px rgba(15, 23, 42, 0.12);
+
+  z-index: 999;
+}
+
+.action-dropdown button {
+  width: 100%;
+
+  padding: 13px 16px;
+
+  border: none;
+  background: transparent;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  cursor: pointer;
+
+  color: #334155;
+  font-size: 13px;
+
+  transition: 0.2s;
+}
+
+.action-dropdown button:hover {
+  background: #f8fafc;
+}
+
+.action-dropdown svg {
+  width: 15px;
+}
+
+.delete-action {
+  color: #dc2626 !important;
+}
+
+.delete-action:hover {
+  background: #fef2f2 !important;
+}
+
+/* ==========================================
+   ROW EFFECT
+========================================== */
+
+.services-table tbody tr:hover .service-name {
+  color: #6d5ef9;
+}
+
+/* ==========================================
+   CHECKBOX
+========================================== */
+
+.services-table input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+  .service-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .service-name {
+    font-size: 13px;
+  }
+
+  .service-code {
+    font-size: 10px;
+  }
+
+  .action-dropdown {
+    width: 170px;
+  }
+
+  .status-badge {
+    min-width: 80px;
+    font-size: 10px;
+  }
+}
