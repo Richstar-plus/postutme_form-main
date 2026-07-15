@@ -8,6 +8,7 @@ import {
   faCirclePause,
   faClipboardList,
 } from "@fortawesome/free-solid-svg-icons";
+import ServicesTable from "../components/services-components/ServicesTable";
 
 export function Services() {
   const handleCardClick = (type) => {
@@ -78,6 +79,9 @@ export function Services() {
           graphColor="#3B82F6"
           onClick={() => handleCardClick("orders")}
         />
+      </div>
+      <div className="service-table-container">
+        <ServicesTable />
       </div>
     </div>
   );

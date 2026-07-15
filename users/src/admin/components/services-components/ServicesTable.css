@@ -34,7 +34,7 @@
   font-size: 13px;
   color: #334155;
   border-bottom: 1px solid #f1f5f9;
-  vertical-align: middle;
+  text-align: start;
 }
 
 .services-table tbody tr {

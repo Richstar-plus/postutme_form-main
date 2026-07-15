@@ -75,15 +75,6 @@ export default function ServiceRow({
 
       <td>
         <div className="service-cell">
-          <div
-            className="service-icon"
-            style={{
-              background: service.color,
-            }}
-          >
-            <FontAwesomeIcon icon={iconMap[service.icon] || faGlobe} />
-          </div>
-
           <div className="service-details">
             <span className="service-name">{service.name}</span>
 
