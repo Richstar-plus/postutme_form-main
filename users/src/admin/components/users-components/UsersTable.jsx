@@ -3,7 +3,7 @@ import "./UsersTable.css";
 
 import UsersToolbar from "./UsersToolbar";
 import UserRow from "./UserRow";
-import usersData from "./usersData";
+import usersData from "../../data/usersData";
 
 export default function UsersTable() {
   const [users, setUsers] = useState(usersData);

@@ -230,7 +230,6 @@ export default function Transactions() {
             <th>Service</th>
             <th>Amount</th>
             <th>Status</th>
-            <th>Date & Time</th>
             <th>Action</th>
           </tr>
         </thead>
@@ -297,13 +296,6 @@ export default function Transactions() {
                 >
                   {item.status}
                 </span>
-              </td>
-
-              <td>
-                <div className="date-time">
-                  <span>{item.date}</span>
-                  <small>{item.time}</small>
-                </div>
               </td>
 
               <td>
