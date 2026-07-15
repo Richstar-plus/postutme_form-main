@@ -24,6 +24,11 @@
   font-weight: 600;
 }
 
+.users-table-main-container {
+  display: flex;
+  padding: 20px 10px;
+}
+
 /* ==========================
    Cards Container
 ========================== */
