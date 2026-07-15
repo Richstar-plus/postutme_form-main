@@ -27,7 +27,7 @@ export default function UsersToolbar({
 
         <FontAwesomeIcon
           icon={faSearch}
-          className="search-icon"
+          className="users-search-icon"
         />
 
         <input

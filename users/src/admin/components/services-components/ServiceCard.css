@@ -1,0 +1,180 @@
+.service-card {
+  width: 100%;
+  min-height: 110px;
+  padding: 18px 20px;
+  border: 1px solid #edf2f7;
+  border-radius: 18px;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-align: left;
+  outline: none;
+}
+
+.service-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.service-card:active {
+  transform: scale(0.985);
+}
+
+.service-card:focus-visible {
+  border-color: #6d5ef9;
+  box-shadow: 0 0 0 4px rgba(109, 94, 249, 0.15);
+}
+
+/* ==========================
+   LEFT SIDE
+========================== */
+
+.service-card-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  flex: 1;
+}
+
+.service-card-icon {
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #ffffff;
+
+  font-size: 16px;
+
+  flex-shrink: 0;
+}
+
+.service-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card-title {
+  margin: 0;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  color: #475569;
+}
+
+.service-card-value {
+  margin: 5px 0;
+
+  font-size: 30px;
+  font-weight: 700;
+
+  line-height: 1;
+
+  color: #0f172a;
+}
+
+.service-card-subtitle {
+  margin: 0;
+
+  font-size: 12px;
+  font-weight: 500;
+
+  color: #64748b;
+}
+
+/* ==========================
+   RIGHT SIDE
+========================== */
+
+.service-card-right {
+  width: 90px;
+  height: 42px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 12px;
+
+  flex-shrink: 0;
+}
+
+.service-card-graph {
+  width: 100%;
+  height: 100%;
+}
+
+/* ==========================
+   LOADING
+========================== */
+
+.service-card-loading {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #64748b;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  min-height: 72px;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width: 1200px) {
+  .service-card {
+    padding: 16px;
+  }
+
+  .service-card-value {
+    font-size: 28px;
+  }
+
+  .service-card-right {
+    width: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-card {
+    padding: 15px;
+  }
+
+  .service-card-icon {
+    width: 38px;
+    height: 38px;
+
+    font-size: 14px;
+  }
+
+  .service-card-title {
+    font-size: 11px;
+  }
+
+  .service-card-value {
+    font-size: 24px;
+  }
+
+  .service-card-subtitle {
+    font-size: 11px;
+  }
+
+  .service-card-right {
+    width: 72px;
+    height: 38px;
+  }
+}

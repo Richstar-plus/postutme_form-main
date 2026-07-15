@@ -1,0 +1,84 @@
+/* =========================================
+   USERS TABLE CONTAINER
+========================================= */
+
+.users-table-container {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #edf2f7;
+  border-radius: 18px;
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+/* =========================================
+   CARD HOLDER
+========================================= */
+
+.services-content-card-holder {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  width: 100%;
+}
+
+/* =========================================
+   CARD ANIMATION
+========================================= */
+
+.services-content-card-holder > * {
+  animation: fadeInUp .35s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1200px) {
+
+  .services-content-card-holder {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .users-table-container {
+    padding: 15px;
+  }
+
+  .services-content-card-holder {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .users-table-container {
+    padding: 12px;
+  }
+
+}
