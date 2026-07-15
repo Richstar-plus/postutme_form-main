@@ -176,16 +176,17 @@ export default function UserRow({
         >
 
           <button
-            className="action-btn"
+            className="users-action-btn"
             onClick={() =>
               setShowMenu(!showMenu)
             }
           >
-            View
-
-            <FontAwesomeIcon
-              icon={faChevronDown}
-            />
+            <p>View</p>
+            <div>
+              <FontAwesomeIcon
+                icon={faChevronDown}
+              />
+            </div>
           </button>
 
           {showMenu && (
