@@ -1,10 +1,10 @@
-export function Transactions() {
+export function Reports() {
   return (
-    <div >
+    <div className="Reports-container">
       <div className="application-nav-indicator">
         <p>Dashboard</p>
         <p>{">"}</p>
-        <p>Transactions</p>
+        <p>Reports</p>
       </div>
     </div>
   );

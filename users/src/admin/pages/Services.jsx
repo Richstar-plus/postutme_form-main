@@ -1,7 +1,7 @@
 export function Services() {
   return (
     <div className="services-container">
-      <div className="services-nav-indicator">
+      <div className="application-nav-indicator">
         <p>Dashboard</p>
         <p>{">"}</p>
         <p>Services</p>

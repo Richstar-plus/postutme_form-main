@@ -28,6 +28,7 @@ import { Schools } from "./admin/pages/Schools";
 import { Transactions } from "./admin/pages/Transactions";
 import { Notifications } from "./admin/pages/Notifications";
 import { Settings } from "./admin/pages/Settings";
+import { Reports } from "./admin/pages/Reports";
 
 
 
@@ -133,6 +134,10 @@ const router = createBrowserRouter([
       {
         path: "notifications",
         element: <Notifications />,
+      },
+      {
+        path: "reports",
+        element: <Reports />,
       },
       {
         path: "settings",
