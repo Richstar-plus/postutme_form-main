@@ -112,7 +112,6 @@ export default function ServiceRow({
       <td>
         <div className="created-date">
           <span>{service.date}</span>
-
           <small>{service.time}</small>
         </div>
       </td>

@@ -3,11 +3,8 @@
   justify-content: space-between;
   align-items: center;
   gap: 18px;
-
   padding: 20px;
-
   border-bottom: 1px solid #edf2f7;
-
   background: #ffffff;
 }
 
@@ -26,35 +23,30 @@
    SEARCH
 ============================ */
 
-.service-search {
+.main-service-search {
   width: 360px;
   height: 44px;
-
   display: flex;
   align-items: center;
   gap: 10px;
-
   padding: 0 14px;
-
   border: 1px solid #e5e7eb;
   border-radius: 10px;
-
   background: #ffffff;
-
   transition: 0.2s;
 }
 
-.service-search:focus-within {
+.main-service-search:focus-within {
   border-color: #6d5ef9;
   box-shadow: 0 0 0 3px rgba(109, 94, 249, 0.08);
 }
 
-.search-icon {
+.main-service-search-icon {
   color: #94a3b8;
   font-size: 14px;
 }
 
-.service-search input {
+.main-service-search input {
   flex: 1;
 
   border: none;
@@ -65,7 +57,7 @@
   font-size: 13px;
 }
 
-.service-search input::placeholder {
+.main-service-search input::placeholder {
   color: #94a3b8;
 }
 

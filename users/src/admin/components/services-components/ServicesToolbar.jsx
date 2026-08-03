@@ -23,8 +23,8 @@ export default function ServicesToolbar({
       <div className="toolbar-left">
         {/* Search */}
 
-        <div className="service-search">
-          <FontAwesomeIcon icon={faSearch} className="search-icon" />
+        <div className="main-service-search">
+          <FontAwesomeIcon icon={faSearch} className="main-service-search-icon" />
 
           <input
             type="text"
